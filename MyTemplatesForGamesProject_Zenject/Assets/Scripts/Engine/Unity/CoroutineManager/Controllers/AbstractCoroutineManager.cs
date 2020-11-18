@@ -13,6 +13,8 @@ namespace Game.Engine
         {
             var gameObject = new GameObject("CoroutineManager");
             _view = gameObject.AddComponent<CoroutineManagerView>();
+            Debug.LogError($"CoroutineManager game object {_view.gameObject.name} has been created!");
+
         }
 
         public Coroutine StartCoroutine(IEnumerator routine)
